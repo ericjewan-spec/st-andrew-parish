@@ -291,6 +291,8 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   animation: fadeUp 1s ease-out 0.8s both;
+  position: relative;
+  z-index: 2;
 }
 
 .btn-primary {
@@ -308,6 +310,8 @@ nav {
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
   text-decoration: none;
+  position: relative;
+  z-index: 2;
 }
 .btn-primary:hover {
   background: var(--gold-dark);
@@ -330,6 +334,8 @@ nav {
   cursor: pointer;
   transition: all 0.3s;
   text-decoration: none;
+  position: relative;
+  z-index: 2;
 }
 .btn-secondary:hover {
   border-color: var(--gold);
@@ -909,7 +915,7 @@ footer {
 
 <!-- ─── HERO ─── -->
 <section class="hero" id="home">
-  <div>
+  <div style="position:relative;z-index:1;">
     <svg class="hero-cross" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="20" y="2" width="8" height="44" rx="2" fill="#C8A96E"/>
       <rect x="6" y="14" width="36" height="8" rx="2" fill="#C8A96E"/>
